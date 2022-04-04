@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100vh;
+    background: lightskyblue url('../files/background.jpg') right top no-repeat scroll;
+    background-size: cover;
+}
+
+.conteudo {
+    max-width: 700px;
+    margin: 10px auto 20px auto;
+}
+
+.formulario {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fieldset */
+.formulario-borda {
+    border: none;
+    background-color: #ccc;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.formulario-legend {
+    border: 1px solid gray;
+    border-radius: 0px 5px 5px 0px;
+    background-color: hsl(28, 68%, 81%);
+    color: white;
+    font: normal bold 1.2em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 3px black;
+    padding: 5px 20px;
+
+    transform: translate(-8.9%, 50%);
+}
+
+.formulario-titulo {
+    color: rgb(134, 54, 134);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+
+    margin-bottom: 20px;
+}
+
+.formulario-box {
+    margin-bottom: 10px;
+}
+
+.formulario-paragrafo {
+    margin: 20px 0px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 200px;
+    padding: 2px;
+}
+
+.rotulo {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.bio-span {
+    display: block;
+    border: 1px solid black;
+    background-color: rgb(112, 33, 33);
+    color: white;
+    text-align: justify;
+    line-height: 1.5em;
+    max-width: 450px;
+    margin: 0px auto;
+    padding: 10px 20px;
+}
+
+.textarea {
+    display: block;
+    margin: 10px auto 0px auto;
+    padding-left: 5px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 100px;
+    padding: 5px 10px;
+}

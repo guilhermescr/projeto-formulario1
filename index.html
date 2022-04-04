@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main class="conteudo">
+        <form class="formulario">
+            <fieldset class="formulario-borda">
+                <legend class="formulario-legend">Questionário Pessoal</legend>
+                <h1 class="formulario-titulo">Formulário</h1>
+                <div class="formulario-box">
+                    <label for="nome" class="rotulo">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="First Name" required>
+                </div>
+                <div class="formulario-box">
+                    <label for="sobrenome" class="rotulo">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Surname">
+                </div>
+                <div class="formulario-box">
+                    <label for="mail" class="rotulo">E-mail:</label>
+                    <input type="email" name="email" id="mail" placeholder="E-mail" required>
+                </div>
+                <div class="formulario-box">
+                    <label for="senha" class="rotulo">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Password" minlength="8" maxlength="16" required>
+                </div>
+                <div class="formulario-box">
+                    <label for="idade" class="rotulo">Idade:</label>
+                    <input type="number" name="idade" id="idade" min="1" max="120" value="1">
+                </div>
+                <div class="formulario-box">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento">
+                </div>
+                <div class="formulario-box">
+                    <p class="formulario-paragrafo">Qual das cores abaixo é a sua favorita? *Escolha apenas um:</p>
+                    <input type="radio" name="cores" id="azul">
+                    <label for="azul">Azul</label>
+                </div>
+                <div class="formulario-box">
+                    <input type="radio" name="cores" id="laranja">
+                    <label for="laranja">Laranja</label>
+                </div>
+                <div class="formulario-box">
+                    <input type="radio" name="cores" id="amarelo">
+                    <label for="amarelo">Amarelo</label>
+                </div>
+                <div class="formulario-box">
+                    <input type="radio" name="cores" id="vermelho">
+                    <label for="vermelho">Vermelho</label>
+                </div>
+                <div class="formulario-box">
+                    <input type="radio" name="cores" id="verde">
+                    <label for="verde">Verde</label>
+                </div>
+                <div class="formulario-box">
+                    <p class="formulario-paragrafo">Qual são as suas comidas favoritas? *Você pode escolher mais de uma opção!</p>
+                    <input type="checkbox" name="lasanha" id="lasanha">
+                    <label for="lasanha">Lasanha</label>
+                    <input type="checkbox" name="pizza" id="pizza">
+                    <label for="pizza">Pizza</label>
+                    <input type="checkbox" name="hambúrguer" id="hambúrguer">
+                    <label for="hambúrguer">Hambúrguer</label>
+                    <input type="checkbox" name="coxinha" id="coxinha">
+                    <label for="coxinha">Coxinha</label>
+                    <input type="checkbox" name="empada" id="empada">
+                    <label for="empada">Empada</label>
+                    <input type="checkbox" name="pastel" id="pastel">
+                    <label for="pastel">Pastel</label>
+                </div> <br>
+                <div class="formulario-box">
+                    <label for="bio"><span class="bio-span">Para finalizar, me conte um pouco mais sobre você para que a minha equipe realize a seleção da melhor forma possível!</span></label> <br>
+                    <textarea name="bio" id="bio" class="textarea" cols="40" rows="10" placeholder="Type something..."></textarea>
+                </div>
+                <div class="botoes">
+                    <button type="reset" class="btn">Reset</button>
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
