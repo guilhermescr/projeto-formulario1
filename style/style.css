@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,13 +10,13 @@
 
 html, body {
     height: 100vh;
-    background: lightskyblue url('../files/background.jpg') right top no-repeat scroll;
+    background: lightskyblue url('../files/background.jpg') right top no-repeat fixed;
     background-size: cover;
 }
 
 .conteudo {
+    margin: 10px auto 0px auto;
     max-width: 700px;
-    margin: 10px auto 20px auto;
 }
 
 .formulario {
@@ -24,30 +26,33 @@ html, body {
 /* Fieldset */
 .formulario-borda {
     border: none;
-    background-color: #ccc;
+    border-radius: 0px 3px 3px 3px;
+    background-color: rgb(240, 240, 250);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    padding: 30px 30px 10px 30px;
 }
 
 .formulario-legend {
     border: 1px solid gray;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 0px 5px 0px;
     background-color: hsl(28, 68%, 81%);
     color: white;
-    font: normal bold 1.2em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: normal bold 1.7em 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 1px 1px 3px black;
     padding: 5px 20px;
 
-    transform: translate(-8.9%, 50%);
+    transform: translate(-9.8%, 50%);
 }
 
 .formulario-titulo {
-    color: rgb(134, 54, 134);
+    background-image: linear-gradient(190deg, #192BC2, #0E0E52);
+    color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
     text-align: center;
-    text-decoration: underline;
-
-    margin-bottom: 20px;
+    text-decoration: none;
+    margin: 5px -30px 20px -30px;
+    padding: 5px 0px;
 }
 
 .formulario-box {
@@ -56,45 +61,130 @@ html, body {
 
 .formulario-paragrafo {
     margin: 20px 0px;
+    font-size: 1.7em;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
-    width: 200px;
-    padding: 2px;
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"] {
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+    padding: 2px 2px 2px 5px;
+    font-size: 25px;
 }
 
 .rotulo {
     display: block;
+    font-size: 1.7em;
     margin-bottom: 3px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label[for="amarelo"], label[for="azul"], label[for="vermelho"], label[for="verde"], label[for="laranja"] {
+    font-size: 1.5em;
+}
+
+.comidas {
+    font-size: 1.5em;
+}
+
+.comidas::before {
+    content: "\00a0";
+}
+
+.comida {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
 }
 
 .bio-span {
     display: block;
     border: 1px solid black;
+    border-radius: 3px;
     background-color: rgb(112, 33, 33);
     color: white;
-    text-align: justify;
     line-height: 1.5em;
-    max-width: 450px;
-    margin: 0px auto;
-    padding: 10px 20px;
+    text-align: center;
+    width: 354px;
+    margin: 20px auto;
+    padding: 10px 10px;
+}
+
+textarea {
+    font-size: 20px;
 }
 
 .textarea {
     display: block;
-    margin: 10px auto 0px auto;
-    padding-left: 5px;
+    margin: 0px auto;
+    padding: 2px 0px 0px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.news {
+    font-size: 1em;
+}
+
+.news::before {
+    content: "\00a0";
+}
+
+.horario {
+    margin: 5px 0px 0px 20px;
 }
 
 .botoes {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .btn {
-    border: 1px solid gray;
-    border-radius: 30px;
-    width: 100px;
-    padding: 5px 10px;
+    background-image: linear-gradient(45deg, #FF7F50, #EA2B1F);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: snow;
+    cursor: pointer;
+    width: 150px;
+    padding: 5px 0px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(90deg, hsl(16, 100%, 46%), hsl(4, 83%, 32%));
+    color: white;
+}
+
+.box-rodape {
+    width: 100%;
+}
+
+.rodape {
+    background-image: linear-gradient(90deg, blue, cyan);
+}
+
+.rodape-texto {
+    font: normal 400 1em 'Rubik Glitch', cursive;
+    text-align: center;
+}
+
+.rodape-texto::before {
+    content: "<\00a0";
+}
+
+.rodape-texto::after {
+    content: "\00a0/>";
+}
+
+@media (max-width: 452px) {
+    .box-rodape {
+        width: 436px;
+    }
 }

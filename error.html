@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERRO 404</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+
+        html, body {
+            background: red url("files/error.jpg") center no-repeat fixed;
+            background-size: cover;
+        }
+
+        main {
+            background-color: black;
+            border-radius: 300px;
+            display: flex;
+            flex-direction: column;
+            margin: 20vh auto 0px auto;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: red;
+            font-family: 'Rubik Glitch', cursive;
+            font-size: 4em;
+            text-align: center;
+        }
+
+        .aviso {
+            color: white;
+            font: normal bold 1.5em Arial, Helvetica, sans-serif;
+            text-align: left;
+            padding: 5px 0px 0px 20px;
+        }
+
+        .retornar {
+            font: normal bold 1.5em Arial, Helvetica, sans-serif;
+            text-align: right;
+            padding: 5px 40px 0px 0px;
+        }
+
+        a {
+            color: white;
+            padding: 5px;
+        }
+
+        .retorno:hover {
+            border-radius: 3px;
+            background-color: rgba(250, 250, 250, 0.4);
+        }
+
+        span {
+            position: absolute;
+            top: 335px;
+            left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>ERROR <br> 404</h1>
+        <p class="aviso">É melhor você voltar...</p>
+        <span><a href="index.html" target="_self"><img src="files/arrow-rotate-right-solid.jpg" alt="Seta de Retorno"></a></span>
+        <p class="retornar"><a class="retorno" href="index.html" target="_self">Retornar</a></p>
+    </main>
+</body>
+</html>

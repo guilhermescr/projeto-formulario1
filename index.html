@@ -8,81 +8,107 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="conteudo">
-        <form class="formulario">
-            <fieldset class="formulario-borda">
-                <legend class="formulario-legend">Questionário Pessoal</legend>
-                <h1 class="formulario-titulo">Formulário</h1>
-                <div class="formulario-box">
-                    <label for="nome" class="rotulo">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="First Name" required>
-                </div>
-                <div class="formulario-box">
-                    <label for="sobrenome" class="rotulo">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Surname">
-                </div>
-                <div class="formulario-box">
-                    <label for="mail" class="rotulo">E-mail:</label>
-                    <input type="email" name="email" id="mail" placeholder="E-mail" required>
-                </div>
-                <div class="formulario-box">
-                    <label for="senha" class="rotulo">Senha:</label>
-                    <input type="password" name="senha" id="senha" placeholder="Password" minlength="8" maxlength="16" required>
-                </div>
-                <div class="formulario-box">
-                    <label for="idade" class="rotulo">Idade:</label>
-                    <input type="number" name="idade" id="idade" min="1" max="120" value="1">
-                </div>
-                <div class="formulario-box">
-                    <label for="nascimento">Data de Nascimento:</label>
-                    <input type="date" name="nascimento" id="nascimento">
-                </div>
-                <div class="formulario-box">
-                    <p class="formulario-paragrafo">Qual das cores abaixo é a sua favorita? *Escolha apenas um:</p>
-                    <input type="radio" name="cores" id="azul">
-                    <label for="azul">Azul</label>
-                </div>
-                <div class="formulario-box">
-                    <input type="radio" name="cores" id="laranja">
-                    <label for="laranja">Laranja</label>
-                </div>
-                <div class="formulario-box">
-                    <input type="radio" name="cores" id="amarelo">
-                    <label for="amarelo">Amarelo</label>
-                </div>
-                <div class="formulario-box">
-                    <input type="radio" name="cores" id="vermelho">
-                    <label for="vermelho">Vermelho</label>
-                </div>
-                <div class="formulario-box">
-                    <input type="radio" name="cores" id="verde">
-                    <label for="verde">Verde</label>
-                </div>
-                <div class="formulario-box">
-                    <p class="formulario-paragrafo">Qual são as suas comidas favoritas? *Você pode escolher mais de uma opção!</p>
-                    <input type="checkbox" name="lasanha" id="lasanha">
-                    <label for="lasanha">Lasanha</label>
-                    <input type="checkbox" name="pizza" id="pizza">
-                    <label for="pizza">Pizza</label>
-                    <input type="checkbox" name="hambúrguer" id="hambúrguer">
-                    <label for="hambúrguer">Hambúrguer</label>
-                    <input type="checkbox" name="coxinha" id="coxinha">
-                    <label for="coxinha">Coxinha</label>
-                    <input type="checkbox" name="empada" id="empada">
-                    <label for="empada">Empada</label>
-                    <input type="checkbox" name="pastel" id="pastel">
-                    <label for="pastel">Pastel</label>
-                </div> <br>
-                <div class="formulario-box">
-                    <label for="bio"><span class="bio-span">Para finalizar, me conte um pouco mais sobre você para que a minha equipe realize a seleção da melhor forma possível!</span></label> <br>
-                    <textarea name="bio" id="bio" class="textarea" cols="40" rows="10" placeholder="Type something..."></textarea>
-                </div>
-                <div class="botoes">
-                    <button type="reset" class="btn">Reset</button>
-                    <button type="submit" class="btn">Enviar</button>
-                </div>
-            </fieldset>
-        </form>
-    </main>
+    <div class="documento">
+        <main class="conteudo">
+            <form action="error.html" class="formulario" method="get" enctype="multipart/form-data">
+                <fieldset class="formulario-borda">
+                    <legend class="formulario-legend">Questionário Pessoal</legend>
+                    <h1 class="formulario-titulo">Formulário</h1>
+                    <div class="formulario-box">
+                        <label for="nome" class="rotulo">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="First Name" required>
+                    </div>
+                    <div class="formulario-box">
+                        <label for="sobrenome" class="rotulo">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Surname">
+                    </div>
+                    <div class="formulario-box">
+                        <label for="mail" class="rotulo">E-mail:</label>
+                        <input type="email" name="email" id="mail" placeholder="E-mail" required>
+                    </div>
+                    <div class="formulario-box">
+                        <label for="senha" class="rotulo">Senha:</label>
+                        <input type="password" name="senha" id="senha" placeholder="Password" minlength="8" maxlength="16" required>
+                    </div>
+                    <div class="formulario-box">
+                        <label for="idade" class="rotulo">Idade:</label>
+                        <input type="number" name="idade" id="idade" min="1" max="120" value="1">
+                    </div>
+                    <div class="formulario-box">
+                        <label for="nascimento" class="rotulo">Data de Nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </div>
+                    <div class="colors">
+                        <div class="formulario-box">
+                            <p class="formulario-paragrafo">Qual das cores abaixo é a sua favorita? *Escolha apenas um:</p>
+                            <input type="radio" name="cores" id="amarelo" checked>
+                            <label for="amarelo">Amarelo</label>
+                        </div>
+                        <div class="formulario-box">
+                            <input type="radio" name="cores" id="azul">
+                            <label for="azul">Azul</label>
+                        </div>
+                        <div class="formulario-box">
+                            <input type="radio" name="cores" id="laranja">
+                            <label for="laranja">Laranja</label>
+                        </div>
+                        <div class="formulario-box">
+                            <input type="radio" name="cores" id="vermelho">
+                            <label for="vermelho">Vermelho</label>
+                        </div>
+                        <div class="formulario-box">
+                            <input type="radio" name="cores" id="verde">
+                            <label for="verde">Verde</label>
+                        </div>
+                    </div>
+                    <div class="formulario-box">
+                        <p class="formulario-paragrafo">Qual são as suas comidas favoritas? *Você pode escolher mais de uma opção!</p>
+                        <div class="comida">
+                            <span class="food-checkbox"><input type="checkbox" name="lasanha" id="lasanha"></span>
+                            <label for="lasanha" class="comidas">Lasanha</label>
+                        </div>
+                        <div class="comida">
+                            <span class="food-checkbox"><input type="checkbox" name="pizza" id="pizza"></span>
+                            <label for="pizza" class="comidas">Pizza</label>
+                        </div>
+                        <div class="comida">
+                            <span class="food-checkbox"><input type="checkbox" name="hambúrguer" id="hambúrguer"></span>
+                            <label for="hambúrguer" class="comidas">Hambúrguer</label>
+                        </div>
+                        <div class="comida">
+                            <span class="food-checkbox"><input type="checkbox" name="coxinha" id="coxinha"></span>
+                            <label for="coxinha" class="comidas">Coxinha</label>
+                        </div>
+                        <div class="comida">
+                            <span class="food-checkbox"><input type="checkbox" name="empada" id="empada"></span>
+                            <label for="empada" class="comidas">Empada</label>
+                        </div>
+                        <div class="comida">
+                            <span class="food-checkbox"><input type="checkbox" name="pastel" id="pastel"></span>
+                            <label for="pastel" class="comidas">Pastel</label>
+                        </div>
+                    </div>
+                    <div class="formulario-box">
+                        <label for="bio" class="rotulo"><span class="bio-span">Me fale um pouco mais sobre você!</span></label>
+                        <span class="area-texto"><textarea name="bio" id="bio" class="textarea" cols="35" rows="7" placeholder="Type something..."></textarea></span>
+                    </div>
+                    <div class="formulario-box">
+                        <input type="checkbox" name="news" id="news">
+                        <label for="news" class="news">Receber newsletter todos os dias às 05:00.</label>
+                        <p class="horario">OBS: Horário de Brasília (UTC/GTM - 03:00)</p>
+                    </div>
+                    <div class="botoes">
+                        <button type="reset" class="btn">Reset</button>
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <div class="box-rodape">
+            <footer class="rodape">
+                <p class="rodape-texto">Desenvolvido por GUIGA Forms</p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
