@@ -128,7 +128,7 @@ textarea {
 }
 
 .news {
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .news::before {
@@ -137,6 +137,7 @@ textarea {
 
 .horario {
     margin: 5px 0px 0px 20px;
+    font-size: 20px;
 }
 
 .botoes {
@@ -155,6 +156,7 @@ textarea {
     padding: 5px 0px;
     font-size: 1.5em;
     letter-spacing: 1px;
+    transition: 1s ease-in-out;
 }
 
 .btn:hover {
@@ -186,5 +188,6 @@ textarea {
 @media (max-width: 452px) {
     .box-rodape {
         width: 436px;
+        font-size: 1.3em;
     }
 }
